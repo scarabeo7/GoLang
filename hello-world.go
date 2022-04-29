@@ -78,6 +78,9 @@ func main() {
 	//Lab 6 func call
 	print()
 	leapYearChecker(2000)
+	
+	answer:= subtract(15, 10)
+	fmt.Println(answer)
 }
 
 // Lab 6
@@ -118,10 +121,14 @@ func divide(a, b int) (result, remainder int) {
 }
 
 // Leap year checker
-func leapYearChecker(year int){
+func leapYearChecker(year int) {
 	if year%4 == 0 && year%100 != 0 || year%400 == 0 {
-		fmt.Printf("%d is a leap year", year)
+		fmt.Printf("%d is a leap year \n", year)
 	} else {
-		fmt.Printf("%d is not a leap year", year)
+		fmt.Printf("%d is not a leap year \n", year)
 	}
+}
+
+func subtract(a, b int) int {
+	return a - b 
 }
