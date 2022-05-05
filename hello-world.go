@@ -79,8 +79,6 @@ func main() {
 	print()
 	leapYearChecker(2000)
 	
-	answer:= subtract(15, 10)
-	fmt.Println(answer)
 }
 
 // Lab 6
@@ -129,6 +127,3 @@ func leapYearChecker(year int) {
 	}
 }
 
-func subtract(a, b int) int {
-	return a - b 
-}
